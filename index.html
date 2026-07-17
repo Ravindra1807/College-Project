@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-icon">
+                <img src="icon's/icon.png" alt="icon" height="100" width="100">
+            </div>
+            <div class="header-content">
+                <h1>NAAC Excellence Portal</h1>
+                <p>Institutional Quality Enhancement & Accreditation</p>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="menu-icon">
+        <button class="menu-toggle" onclick="toggleSidebar(event)">
+            <img src="icon's/barra-de-menus.png" alt="menu-button" class="img">
+        </button>
+    </div>
+    <nav id="nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+
+                    <button class="nav-button" onclick="toggleList('list1', this, event)">
+                        <div class="box"> <img src="icon's/icons8-open-book-48.png" alt="" height="20" width="20"> NAAC
+                            Menu
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+
+                    <ul id="list1" class="menu">
+                        <li><a href="pdf/Accreditation_Status.pdf" target="pdf">Accreditation Status</a></li>
+                        <li><a href="pdf/SSR_Reports.pdf" target="pdf">SSR Reports</a></li>
+                        <li><a href="pdf/AQAR_Reports_Year_wise.pdf" target="pdf">AQAR Reports (Year-wise)</a></li>
+                        <li><a href="pdf/IIQA.pdf" target="pdf">IIQA</a></li>
+                        <li><a href="pdf/DVV_Clarifications.pdf" target="pdf">DVV Clarifications</a></li>
+                        <li><a href="pdf/Extended_Profile.pdf" target="pdf">Extended Profile</a></li>
+                        <li><a href="pdf/Best_Practices.pdf" target="pdf">Best Practices</a></li>
+                        <li><a href="pdf/Institutional_Distinctiveness.pdf" target="pdf">Institutional
+                                Distinctiveness</a></li>
+                        <li><a href="pdf/Code_of_Conduct.pdf" target="pdf">Code of Conduct</a></li>
+                        <li><a href="pdf/Strategic_Plan.pdf" target="pdf">Strategic</a></li>
+                        <li><a href="pdf/Perspective_Plan.pdf" target="pdf">Perspective Plan</a></li>
+                        <li><a href="pdf/Annual_Reports.pdf" target="pdf">Annual Reports</a></li>
+                        <li><a href="pdf/Academic_Calendar.pdf" target="pdf">Academic Calendar</a></li>
+                        <li><a href="pdf/Feedback_Analysis_Action_Taken_Report.pdf" target="pdf">Feedback Analysis &amp;
+                                Action Taken Report</a></li>
+
+                    </ul>
+
+
+
+                </li>
+                <li class="nav-item"><button class="nav-button" onclick="toggleList('list2', this, event)">
+                        <div class="box"> <img src="icon's/icons8-document-80.png" alt="" height="20" width="20">
+                            IQAC</div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list2" class="menu">
+
+                        <li><a href="pdf/IQAC_Composition.pdf" target="pdf">IQAC Composition</a></li>
+
+                        <li><a href="pdf/IQAC_Meeting_Minutes.pdf" target="pdf">IQAC Meeting Minutes</a></li>
+
+                        <li><a href="pdf/Action_Taken_Reports_ATR.pdf" target="pdf">Action Taken Reports (ATR)</a></li>
+
+                        <li><a href="pdf/AQAR_Reports.pdf" target="pdf">AQAR Reports</a></li>
+
+                        <li><a href="pdf/Quality_Initiatives.pdf" target="pdf">Quality Initiatives</a></li>
+
+                        <li><a href="pdf/Academic_and_Administrative_Audit_AAA.pdf" target="pdf">Academic and
+                                Administrative Audit (AAA)</a></li>
+
+                        <li><a href="pdf/Green_Audit.pdf" target="pdf">Green Audit</a></li>
+
+                        <li><a href="pdf/Energy_Audit.pdf" target="pdf">Energy Audit</a></li>
+
+                        <li><a href="pdf/Gender_Audit.pdf" target="pdf">Gender Audit</a></li>
+
+                        <li><a href="pdf/Feedback_Reports.pdf" target="pdf">Feedback Reports</a></li>
+
+                        <li><a href="pdf/Institutional_Best_Practices.pdf" target="pdf">Institutional Best Practices</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list3', this, event)">
+                        <div class="box"> <img src="icon's/icons8-department-50.png" alt="" height="20" width="20">
+                            Department-wise
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list3" class="menu">
+                        <li><a href="pdf/Department_Profile.pdf" target="pdf">Department Profile</a></li>
+
+                        <li><a href="pdf/Vision_Mission.pdf" target="pdf">Vision & Mission</a></li>
+
+                        <li><a href="pdf/Faculty_Profiles.pdf" target="pdf">Faculty Profiles</a></li>
+
+                        <li><a href="pdf/Publications.pdf" target="pdf">Publications</a></li>
+
+                        <li><a href="pdf/Research_Activities.pdf" target="pdf">Research Activities</a></li>
+
+                        <li><a href="pdf/Student_Achievements.pdf" target="pdf">Student Achievements</a></li>
+
+                        <li><a href="pdf/Department_Activities.pdf" target="pdf">Department Activities</a></li>
+
+                        <li><a href="pdf/Results_Analysis.pdf" target="pdf">Results Analysis</a></li>
+
+                        <li><a href="pdf/Syllabus.pdf" target="pdf">Syllabus</a></li>
+
+                        <li><a href="pdf/Time_Tables.pdf" target="pdf">Time Tables</a></li>
+
+                        <li><a href="pdf/Course_Outcomes_CO.pdf" target="pdf">Course Outcomes (CO)</a></li>
+
+                        <li><a href="pdf/Program_Outcomes_PO.pdf" target="pdf">Program Outcomes (PO)</a></li>
+
+                        <li><a href="pdf/Program_Specific_Outcomes_PSO.pdf" target="pdf">Program Specific Outcomes
+                                (PSO)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list4', this, event)">
+                        <div class="box"> <img src="icon's/icons8-name-64.png" alt="" height="20"
+                                width="20">Faculty-Profile
+                        </div><svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list4" class="menu">
+                        <li><a href="pdf/Qualification.pdf" target="pdf">Qualification</a></li>
+                        <li><a href="pdf/Experience.pdf" target="pdf">Experience</a></li>
+                        <li><a href="pdf/Research_Publications.pdf" target="pdf">Research Publications</a></li>
+                        <li><a href="pdf/Books_Published.pdf" target="pdf">Books Published</a></li>
+                        <li><a href="pdf/Research_Projects.pdf" target="pdf">Research Projects</a></li>
+                        <li><a href="pdf/Patents.pdf" target="pdf">Patents</a></li>
+                        <li><a href="pdf/FDPs_Attended.pdf" target="pdf">FDPs Attended</a></li>
+                        <li><a href="pdf/Awards_Recognition.pdf" target="pdf">Awards & Recognition</a></li>
+                        <li><a href="pdf/Google_Scholar_Profile.pdf" target="pdf">Google Scholar Profile</a></li>
+                        <li><a href="pdf/ORCID_ID.pdf" target="pdf">ORCID ID</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item"><button class="nav-button" onclick="toggleList('list5', this, event)">
+                        <div class="box"> <img src="icon's/icons8-lightbulb-64.png" alt="" height="20" width="20">
+                            Research & Innovation </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+
+                    <ul id="list5" class="menu">
+                        <li><a href="pdf/Research_Policy.pdf" target="pdf">Research Policy</a></li>
+                        <li><a href="pdf/Research_Committee.pdf" target="pdf">Research Committee</a></li>
+                        <li><a href="pdf/Publications.pdf" target="pdf">Publications</a></li>
+                        <li><a href="pdf/Books_and_Chapters.pdf" target="pdf">Books & Chapters</a></li>
+                        <li><a href="pdf/Patents.pdf" target="pdf">Patents</a></li>
+                        <li><a href="pdf/IPR_Activities.pdf" target="pdf">IPR Activities</a></li>
+                        <li><a href="pdf/Research_Projects.pdf" target="pdf">Research Projects</a></li>
+                        <li><a href="pdf/Seed_Money.pdf" target="pdf">Seed Money</a></li>
+                        <li><a href="pdf/Consultancy.pdf" target="pdf">Consultancy</a></li>
+                        <li><a href="pdf/Collaboration_MoUs.pdf" target="pdf">Collaboration &amp; MoUs</a></li>
+                        <li><a href="pdf/Research_Awards.pdf" target="pdf">Research Awards</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list6', this, event)">
+                        <div class="box"> <img src="icon's/icons8-user-groups-64.png" alt="" height="20" width="20">
+                            Student
+                            Support Section
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list6" class="menu">
+                        <li><a href="pdf/Scholarships.pdf" target="pdf">Scholarships</a></li>
+                        <li><a href="pdf/Placement_Cell.pdf" target="pdf">Placement Cell</a></li>
+                        <li><a href="pdf/Career_Guidance.pdf" target="pdf">Career Guidance</a></li>
+                        <li><a href="pdf/Competitive_Examination_Guidance.pdf" target="pdf">Competitive Examination
+                                Guidance</a></li>
+                        <li><a href="pdf/Alumni_Association.pdf" target="pdf">Alumni Association</a></li>
+                        <li><a href="pdf/Student_Council.pdf" target="pdf">Student Council</a></li>
+                        <li><a href="pdf/Anti_Ragging_Cell.pdf" target="pdf">Anti-Ragging Cell</a></li>
+                        <li><a href="pdf/Grievance_Redressal_Cell.pdf" target="pdf">Grievance Redressal Cell</a></li>
+                        <li><a href="pdf/Women_Development_Cell.pdf" target="pdf">Women Development Cell</a></li>
+                        <li><a href="pdf/SC_ST_Cell.pdf" target="pdf">SC/ST Cell</a></li>
+                        <li><a href="pdf/OBC_Cell.pdf" target="pdf">OBC Cell</a></li>
+                        <li><a href="pdf/Minority_Cell.pdf" target="pdf">Minority Cell</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list7', this, event)">
+                        <div class="box"> <img src="icon's/icons8-coronavirus-shield-64.png" alt="" height="20"
+                                width="20">
+                            Mandatory Disclosure </div>
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list7" class="menu">
+                        <li><a href="pdf/AISHE_Report.pdf" target="pdf">AISHE Report</a></li>
+                        <li><a href="pdf/UGC_Recognition.pdf" target="pdf">UGC Recognition</a></li>
+                        <li><a href="pdf/Affiliation_Letter.pdf" target="pdf">Affiliation Letter</a></li>
+                        <li><a href="pdf/Trust_Registration.pdf" target="pdf">Trust Registration</a></li>
+                        <li><a href="pdf/Society_Registration.pdf" target="pdf">Society Registration</a></li>
+                        <li><a href="pdf/Audit_Reports.pdf" target="pdf">Audit Reports</a></li>
+                        <li><a href="pdf/Governing_Body_Details.pdf" target="pdf">Governing Body Details</a></li>
+                        <li><a href="pdf/CDC_Details.pdf" target="pdf">CDC Details</a></li>
+                        <li><a href="pdf/Organizational_Structure.pdf" target="pdf">Organizational Structure</a></li>
+                        <li><a href="pdf/Service_Rules.pdf" target="pdf">Service Rules</a></li>
+                        <li><a href="pdf/HR_Policy.pdf" target="pdf">HR Policy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list8', this, event)">
+                        <div class="box"> <img src="icon's/icons8-trophy-64.png" alt="" height="20" width="20"> Student
+                            Achievement
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list8" class="menu">
+                        <li><a href="pdf/University_Rank_Holders.pdf" target="pdf">University Rank Holders</a></li>
+                        <li><a href="pdf/Sports_Achievements.pdf" target="pdf">Sports Achievements</a></li>
+                        <li><a href="pdf/NCC_Achievements.pdf" target="pdf">NCC Achievements</a></li>
+                        <li><a href="pdf/NSS_Achievements.pdf" target="pdf">NSS Achievements</a></li>
+                        <li><a href="pdf/Cultural_Achievements.pdf" target="pdf">Cultural Achievements</a></li>
+                        <li><a href="pdf/Placement_Achievements.pdf" target="pdf">Placement Achievements</a></li>
+                        <li><a href="pdf/Alumni_Success_Stories.pdf" target="pdf">Alumni Success Stories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><button class="nav-button" onclick="toggleList('list9', this, event)">
+                        <div class="box"> <img src="icon's/icons8-download-via-browser-64.png" alt="" height="20"
+                                width="20">
+                            Downloads
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list9" class="menu">
+                        <li><a href="pdf/Policies.pdf" target="pdf">Policies</a></li>
+                        <li><a href="pdf/Committee_Orders.pdf" target="pdf">Committee Orders</a></li>
+                        <li><a href="pdf/Annual_Reports.pdf" target="pdf">Annual Reports</a></li>
+                        <li><a href="pdf/Academic_Calendar.pdf" target="pdf">Academic Calendar</a></li>
+                        <li><a href="pdf/Prospectus.pdf" target="pdf">Prospectus</a></li>
+                        <li><a href="pdf/Examination_Documents.pdf" target="pdf">Examination Documents</a></li>
+                        <li><a href="pdf/Feedback_Reports.pdf" target="pdf">Feedback Reports</a></li>
+                        <li><a href="pdf/NAAC_Documents.pdf" target="pdf">NAAC Documents</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list10', this, event)">
+                        <div class="box"> <img src="icon's/icons8-graduation-cap-64.png" alt="" height="20" width="20">
+                            Alumni
+                            Portal
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list10" class="menu">
+                        <li><a href="pdf/Alumni_Registration.pdf" target="pdf">Alumni Registration</a></li>
+                        <li><a href="pdf/Alumni_Activities.pdf" target="pdf">Alumni Activities</a></li>
+                        <li><a href="pdf/Distinguished_Alumni.pdf" target="pdf">Distinguished Alumni</a></li>
+                        <li><a href="pdf/Alumni_Feedback.pdf" target="pdf">Alumni Feedback</a></li>
+                        <li><a href="pdf/Alumni_Contributions.pdf" target="pdf">Alumni Contributions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list11', this, event)">
+                        <div class="box"> <img src="icon's/icons8-briefcase-64.png" alt="" height="20" width="20">
+                            Placement &
+                            Career Cell
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list11" class="menu">
+                        <li><a href="pdf/Placement_Statistics_Last_5_Years.pdf" target="pdf">Placement Statistics (Last
+                                5 Years)</a></li>
+                        <li><a href="pdf/Recruiters.pdf" target="pdf">Recruiters</a></li>
+                        <li><a href="pdf/Placement_Brochure.pdf" target="pdf">Placement Brochure</a></li>
+                        <li><a href="pdf/Training_Programs.pdf" target="pdf">Training Programs</a></li>
+                        <li><a href="pdf/Internship_Details.pdf" target="pdf">Internship Details</a></li>
+                        <li><a href="pdf/Student_Placement_Records.pdf" target="pdf">Student Placement Records</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list12', this, event)">
+                        <div class="box"> <img src="icon's/icons8-combo-chart-50.png" alt="" height="20" width="20">
+                            Website
+                            Analytics Dashboard
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list12" class="menu">
+                        <li><a href="#">Modern Homepage Banner</a></li>
+                        <li><a href="#">Mobile Responsive Design</a></li>
+                        <li><a href="#">Quick Links Dashboard</a></li>
+                        <li><a href="#">Search Bar</a></li>
+                        <li><a href="#">Faculty Directory</a></li>
+                        <li><a href="#">Event Calendar</a></li>
+                        <li><a href="#">Notice Board Widget</a></li>
+                        <li><a href="#">Download Center</a></li>
+                        <li><a href="#">Accessibility Features</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list13', this, event)">
+                        <div class="box"> <img src="icon's/icons8-line-chart-64.png" alt="" height="20" width="20"> NAAC
+                            Metric-wise
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list13" class="menu">
+                        <li><a href="pdf/Table_A.pdf" target="pdf">Table A</a></li>
+                        <li><a href="pdf/Table_B.pdf" target="pdf">Table B</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"> <button class="nav-button" onclick="toggleList('list14', this, event)">
+                        <div class="box"> <img src="icon's/icons8-smartphone-64.png" alt="" height="20" width="20">
+                            Website
+                            Design Improvements
+                        </div> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <ul id="list14" class="menu">
+                        <li><a href="pdf/Student_Strength.pdf" target="pdf">Student Strength</a></li>
+                        <li><a href="pdf/Faculty_Strength.pdf" target="pdf">Faculty Strength</a></li>
+                        <li><a href="pdf/Programmes_Offered.pdf" target="pdf">Programmes Offered</a></li>
+                        <li><a href="pdf/Publications.pdf" target="pdf">Publications</a></li>
+                        <li><a href="pdf/Placement_Records.pdf" target="pdf">Placement Records</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <main class="main-content">
+            <iframe name="pdf" style=" border:none">
+            </iframe>
+        </main>
+
+    </main>
+    <script>
+        function toggleSidebar(event) {
+            event.stopPropagation();
+
+            const nav = document.getElementById("nav");
+            nav.classList.toggle("show");
+
+            document.body.style.overflow = nav.classList.contains("show")
+                ? "hidden"
+                : "";
+        }
+
+         function toggleList(id, button, event) {
+            event.stopPropagation();
+
+            const list = document.getElementById(id);
+            const isOpen = list.style.display === "block";
+
+             document.querySelectorAll(".menu").forEach(menu => {
+                menu.style.display = "none";
+            });
+
+             document.querySelectorAll(".nav-button").forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+             if (!isOpen) {
+                list.style.display = "block";
+                button.classList.add("active");
+            }
+        }
+
+         document.addEventListener("click", function (e) {
+
+            const nav = document.getElementById("nav");
+            const menuBtn = document.querySelector(".menu-toggle");
+
+             if (e.target.closest("#nav") || e.target.closest(".menu-toggle")) {
+                return;
+            }
+            if (nav.contains(e.target)) {
+                return;
+            }
+
+             document.querySelectorAll(".menu").forEach(menu => {
+                menu.style.display = "none";
+            });
+
+             document.querySelectorAll(".nav-button").forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+             if (window.innerWidth <= 768) {
+                nav.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+        });
+
+
+         function openPDF(file) {
+            document.getElementById("pdfViewer").src = file;
+        }
+    </script>
+</body>
+
+</html>
